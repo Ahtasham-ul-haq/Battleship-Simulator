@@ -16,6 +16,8 @@ int main()
 	cout << "\n\n\n              MAIN MENU\n    ----------------------------------\n";
 	char board[10][10];
 	initializeBoard(board);
+	clearScreen();
+	initializeBoard(board);
 	
 	return 0;
 }
