@@ -7,19 +7,52 @@ using namespace std;
 void setColor(int textColor, int bgColor);
 void initializeBoard(char board[10][10]);
 void clearScreen();
+int showMenu();
+int instriction();
 
 int main()
 {
 	cout << "    ==================================\n\n";
 	cout << "          WELCOME TO BATTLESHIP GAME        ";
 	cout << "\n\n    ==================================";
-	cout << "\n\n\n              MAIN MENU\n    ----------------------------------\n";
-	char board[10][10];
-	initializeBoard(board);
-	clearScreen();
-	initializeBoard(board);
+	int n = showMenu();
+	switch(n)
+	{
+		case 1:
+			// StartGame()
+			break;
+		case 2:
+//			intructions();
+			break;
+		case 3:
+//			viewLeaderBoard();
+			break;
+		case 4:
+//			exit();
+		default:
+			cout << "Error Try again";
+			break;
+	}
 	
 	return 0;
+}
+
+int showMenu()
+{
+	int choice;
+	cout << "\n              MAIN MENU\n    ----------------------------------\n";
+	cout << "    1.\tStart New Game\n    2.\tInstructions\n    3.\tView Leader Board\n    4.\tExit\n";
+	cout << "\tEnter your choice (1-4): ";
+	cin >> choice;
+	
+	return choice;
+}
+
+int instructions()
+{
+	int press;
+	cout << "Instructions"
+	cin >> ;
 }
 
 // Color codes
