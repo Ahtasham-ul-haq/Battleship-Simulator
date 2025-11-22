@@ -51,8 +51,8 @@ int showMenu()
 int instructions()
 {
 	int press;
-	cout << "Instructions"
-	cin >> ;
+	cout << "Instructions";
+	cin >> press;
 }
 
 // Color codes
@@ -84,8 +84,8 @@ void initializeBoard(char board[10][10]){
         for (int j = 0; j < 10; j++)
             board[i][j] = '~';
 
-//    board[2][3] = 'X'; 
-//    board[7][8] = 'O'; 
+   board[2][3] = 'X'; 
+   board[7][8] = 'O'; 
 
     // Print column headers (hardcoded)
     cout << "     0    1    2    3    4    5    6    7    8    9  " << endl;
