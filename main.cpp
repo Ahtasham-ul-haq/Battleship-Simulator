@@ -5,7 +5,23 @@
 #include <conio.h>   // for getch()
 using namespace std;
 
-// ==================== COLOR CODES ====================
+void setColor(int textColor, int bgColor);
+void initializeBoard(char board[10][10]);
+void clearScreen();
+
+int main()
+{
+	cout << "    ==================================\n\n";
+	cout << "          WELCOME TO BATTLESHIP GAME        ";
+	cout << "\n\n    ==================================";
+	cout << "\n\n\n              MAIN MENU\n    ----------------------------------\n";
+	char board[10][10];
+	initializeBoard(board);
+	
+	return 0;
+}
+
+// Color codes
 const int BLACK = 0;
 const int BLUE = 1;
 const int GREEN = 2;
